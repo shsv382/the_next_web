@@ -4,3 +4,32 @@
 	box-sizing: border-box;
 }
 
+nav {
+	background-color: #111;
+	height: 32px;
+	color: #999;
+	font-family: sans-serif;
+	font-size: .75em;
+}
+
+#current {
+	color: white;
+}
+
+ul#categories {
+	float: left;
+}
+
+ul#links {
+	float: right;
+}
+
+nav > ul {
+	margin: 10px;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin: 0 5px;
+	cursor: pointer;
+}
