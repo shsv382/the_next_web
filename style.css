@@ -24,6 +24,8 @@ nav {
 
 ul#categories {
 	float: left;
+	position: relative;
+	left: -100px;
 }
 
 ul#links {
@@ -62,7 +64,9 @@ div#line > p:hover {
 
 div#logo {
 	width: 100px;
-	height: 100%;
+	height: 50px;
+	position: relative;
+	top: 32px;
 	margin-right: 15px;
 	float: left;
 	background-color: magenta;
@@ -79,3 +83,32 @@ div#logo > p {
 	font-size: 1.75em;
 	margin: auto;
 }
+
+@media screen and (max-width: 950px) and (min-width: 801px) {
+	ul#categories {
+		left: 0;
+		}
+		
+	div#logo {
+		top: 0;
+		height: 82px;
+	}
+	
+	div#logo > p {
+		padding: 26px 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	nav {
+		display: none;
+	}
+	
+	div#logo {
+		top: 0;
+		height: 50px;
+	}
+}
+
+
+
