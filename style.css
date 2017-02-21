@@ -42,6 +42,10 @@ nav > ul > li {
 	cursor: pointer;
 }
 
+nav > ul > li:hover {
+	color: white;
+}
+
 /* Site-wide line */
 
 div#line {
