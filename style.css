@@ -169,27 +169,32 @@ h2, h4 {
 	margin: auto;
 	margin-top: 50px;
 	border: 1px dotted blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #latest > div {
 	width: 30%;
 	max-width: 300px;
+	margin: 10px 0;
 }
 
 #latest > div > img {
-	display: block;
 	width: 200px;
 	height: 100px;
-	float: left;
 }
 
 h1 {
 	padding: 0;
 	height: auto;
+	margin-bottom: 30px;
+	width: 100%;
+	border: 1px dashed green;
 }
 
 .mini-header {
-	float: right;
+	display: inline-block;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 901px) {
