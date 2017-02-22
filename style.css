@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+h1, h2, h5 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
 /* Header with nav-bar */
 
 header {
@@ -168,33 +174,49 @@ h2, h4 {
 	width: 98%;
 	margin: auto;
 	margin-top: 50px;
-	border: 1px dotted blue;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-#latest > div {
+div.preview {
 	width: 30%;
 	max-width: 300px;
 	margin: 10px 0;
 }
 
-#latest > div > img {
+div.preview > img {
+	display: block;
 	width: 200px;
 	height: 100px;
+	float: left;
 }
 
 h1 {
 	padding: 0;
 	height: auto;
+	margin: auto;
 	margin-bottom: 30px;
-	width: 100%;
-	border: 1px dashed green;
+	width: 90%;
+	color: #ff3300;
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+h1:hover {
+	color: black;
 }
 
 .mini-header {
 	display: inline-block;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+h6  {
+	color: #777;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 901px) {
@@ -235,13 +257,40 @@ h1 {
 		height: 200px;
 		margin-bottom: 20px;
 		clear: both;
-		border: 1px dotted blue;
 	}
 	
 	h2, h4 {
 		font-size: 7vh;
 	}
 	
+	#latest {
+		display: block;
+		width: 98%;
+		margin: auto;
+		flex-wrap: none;
+		justify-content: none;
+	}
+	
+	div.preview {
+		display: block;
+		width: 90%;
+		max-width: 90%;
+		height: 70px;
+		margin: 15px auto;
+	}
+	
+	div.preview > img {
+		display: inline-block;
+		clear: none;
+		width: 70px;
+		height: 70px;
+		float: left;
+	}
+	
+	.mini-header {
+		clear: none;
+		margin-left: 10px;
+	}
 }
 
 
